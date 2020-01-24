@@ -1,52 +1,98 @@
 
 /* main styles */
 body {
-  background-color: orange;
+  background: rgb(247, 247, 247);
   display: flex;
   margin: 0;
-  height: 100%;
+  max-height: 100vh;
 }
 
 nav {
   width: 20%;
   height: 100vh;
-  background-color: orangered;
+  background-color: rgb(66, 66, 66);
+  padding: 30px 40px;
 }
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+}
+
+nav h2 {
+  color: rgb(175, 175, 175);
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  margin-top: 60px;
+}
+
+nav h2:first-of-type {
+  margin: 5px 0;
+}
+
+a:first-of-type {
+  margin: 5px 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  margin: 30px 0;
+}
+
+
 
 main {
   width: 80%;
-  height: 100%;
-  background: red;
+  height: 100vh;
+  margin: 20px 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
 }
 
 /* panel wrapper */
 .panels {
   width: 100%;
-  height: 100%;
-  background-color: royalblue;
+  height: 90%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
+.panels h2, h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0 20px 0;
+}
+
+.panels p {
+  font-size: 18px;
+  margin: 0 0 12px 0;
+}
+
 /* next call styles */
 .nextCall {
-  min-height: 50%;
+  height: 40%;
   width: 50%;
   display: flex;
   flex-direction: column;
-  background-color: purple;
+}
+
+.nextCall h3 {
+  margin: 0;
 }
 
 .nextCall div {
   display: flex;
   flex-direction: row;
   width: 100%;
-  background-color: blue;
+  margin: 3px 0;
 }
 
 .nextCall .infoType {
-  background-color: blue;
   width: 50%;
 }
 
@@ -54,24 +100,21 @@ main {
 .nextCall .info {
   display: flex;
   flex-direction: column;
-  background: red;
   width: 50%;
 }
 
 /* calls this month styles */
 .callsThisMonth {
-  min-height: 50%;
+  height: 40%;
   width: 50%;
   display: flex;
   flex-direction: column;
-  background-color: purple;
 }
 
 /* breakdown styles */
 .breakdown {
   min-height: 50%;
   width: 100%;
-  background-color: ivory;
 }
 
 .key {
@@ -88,7 +131,6 @@ main {
 
 /* rotated squares */
 .key div div {
-  background-color: saddlebrown;
   height: 10px;
   width: 10px;
   margin: 10px;
@@ -105,7 +147,32 @@ main {
 }
 
 .bar div {
-  background-color: green;
   width: 15%;
   height: 100%;
+}
+
+/* key colors */
+
+.Adherence {
+  background-color: rgb(23, 160, 228);
+}
+
+.Combination {
+  background-color: rgb(58, 225, 192);
+}
+
+.Dosing {
+  background-color: rgb(228, 224, 116);
+}
+
+.Guidelines {
+  background-color: rgb(229, 126, 85);
+}
+
+.Safety {
+  background-color: rgb(160, 136, 228);
+}
+
+.Other {
+  background-color: rgb(228, 228, 228);
 }
